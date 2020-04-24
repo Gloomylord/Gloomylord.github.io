@@ -1716,7 +1716,7 @@
                         this.xPos, this.yPos,
                         this.config.WIDTH_DUCK, this.config.HEIGHT);
                 } else {
-                    this.canvasCtx.drawImage(Runner.imageSpriteUp, sourceX-170, sourceY+16,
+                    this.canvasCtx.drawImage(Runner.imageSpriteUp, sourceX-171, sourceY+16,
                         sourceWidth, sourceHeight,
                         this.xPos, this.yPos,
                         this.config.WIDTH_DUCK, this.config.HEIGHT);
