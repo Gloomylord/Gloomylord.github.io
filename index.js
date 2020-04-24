@@ -87,7 +87,7 @@
     var FPS = 60;
 
     /** @const */
-    var IS_HIDPI = window.devicePixelRatio > 1;
+    var IS_HIDPI = false//window.devicePixelRatio > 1;
 
     /** @const */
     var IS_IOS = /iPad|iPhone|iPod/.test(window.navigator.platform);
@@ -288,6 +288,7 @@
         loadImages: function () {
             if (IS_HIDPI) {
                 Runner.imageSprite = document.getElementById('offline-resources-2x');
+                Runner.imageSpriteUp = Runner.imageSprite;
                 this.spriteDef = Runner.spriteDefinition.HDPI;
             } else {
                 Runner.imageSprite = document.getElementById('offline-resources-1x');
@@ -295,11 +296,13 @@
                 Runner.imageSpriteUp = document.getElementById('offline-resources-1x-up');
             }
 
-            if (Runner.imageSprite.complete) {
+            if (Runner.imageSprite.complete && Runner.imageSpriteUp.complete) {
                 this.init();
             } else {
                 // If the images are not yet loaded, add a listener.
                 Runner.imageSprite.addEventListener(Runner.events.LOAD,
+                    this.init.bind(this));
+                Runner.imageSpriteUp.addEventListener(Runner.events.LOAD,
                     this.init.bind(this));
             }
         },
@@ -1716,7 +1719,7 @@
                         this.xPos, this.yPos,
                         this.config.WIDTH_DUCK, this.config.HEIGHT);
                 } else {
-                    this.canvasCtx.drawImage(Runner.imageSpriteUp, sourceX-171, sourceY+16,
+                    this.canvasCtx.drawImage(Runner.imageSpriteUp, sourceX - 171, sourceY + 16,
                         sourceWidth, sourceHeight,
                         this.xPos, this.yPos,
                         this.config.WIDTH_DUCK, this.config.HEIGHT);
@@ -1733,7 +1736,7 @@
                         this.xPos, this.yPos,
                         this.config.WIDTH, this.config.HEIGHT);
                 } else {
-                    this.canvasCtx.drawImage(Runner.imageSpriteUp, sourceX-171, sourceY+16,
+                    this.canvasCtx.drawImage(Runner.imageSpriteUp, sourceX - 171, sourceY + 16,
                         sourceWidth, sourceHeight,
                         this.xPos, this.yPos,
                         this.config.WIDTH, this.config.HEIGHT);
