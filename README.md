@@ -14,7 +14,7 @@ see the [source](https://cs.chromium.org/chromium/src/components/neterror/resour
 * changed the behavior when you press the space
 * added a second horizon
 
-[try my Fork :smile: ](http://wayou.github.io/t-rex-runner/)
+[try my Fork :smile: ](https://gloomylord.github.io/)
 
 ![chrome offline game cast](/Trex.gif)
 
