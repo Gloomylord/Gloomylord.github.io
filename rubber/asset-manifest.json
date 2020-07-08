@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rubber/static/css/main.ccfee244.chunk.css",
+    "main.js": "/rubber/static/js/main.2e26c13f.chunk.js",
+    "main.js.map": "/rubber/static/js/main.2e26c13f.chunk.js.map",
+    "runtime-main.js": "/rubber/static/js/runtime-main.f466d0b8.js",
+    "runtime-main.js.map": "/rubber/static/js/runtime-main.f466d0b8.js.map",
+    "static/js/2.de97f8f6.chunk.js": "/rubber/static/js/2.de97f8f6.chunk.js",
+    "static/js/2.de97f8f6.chunk.js.map": "/rubber/static/js/2.de97f8f6.chunk.js.map",
+    "index.html": "/rubber/index.html",
+    "precache-manifest.5af93fa4f06e3555c4aa6ce4cdd57040.js": "/rubber/precache-manifest.5af93fa4f06e3555c4aa6ce4cdd57040.js",
+    "service-worker.js": "/rubber/service-worker.js",
+    "static/css/main.ccfee244.chunk.css.map": "/rubber/static/css/main.ccfee244.chunk.css.map",
+    "static/js/2.de97f8f6.chunk.js.LICENSE.txt": "/rubber/static/js/2.de97f8f6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f466d0b8.js",
+    "static/js/2.de97f8f6.chunk.js",
+    "static/css/main.ccfee244.chunk.css",
+    "static/js/main.2e26c13f.chunk.js"
+  ]
+}
