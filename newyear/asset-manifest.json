@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/newyear/static/css/main.1b2ff3ff.chunk.css",
-    "main.js": "/newyear/static/js/main.6de1733f.chunk.js",
-    "main.js.map": "/newyear/static/js/main.6de1733f.chunk.js.map",
+    "main.css": "/newyear/static/css/main.4c7bac6d.chunk.css",
+    "main.js": "/newyear/static/js/main.b4ac845e.chunk.js",
+    "main.js.map": "/newyear/static/js/main.b4ac845e.chunk.js.map",
     "runtime-main.js": "/newyear/static/js/runtime-main.10b2050b.js",
     "runtime-main.js.map": "/newyear/static/js/runtime-main.10b2050b.js.map",
     "static/js/2.84d8e56e.chunk.js": "/newyear/static/js/2.84d8e56e.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.b4fd9df8.chunk.js": "/newyear/static/js/3.b4fd9df8.chunk.js",
     "static/js/3.b4fd9df8.chunk.js.map": "/newyear/static/js/3.b4fd9df8.chunk.js.map",
     "index.html": "/newyear/index.html",
-    "static/css/main.1b2ff3ff.chunk.css.map": "/newyear/static/css/main.1b2ff3ff.chunk.css.map",
+    "static/css/main.4c7bac6d.chunk.css.map": "/newyear/static/css/main.4c7bac6d.chunk.css.map",
     "static/js/2.84d8e56e.chunk.js.LICENSE.txt": "/newyear/static/js/2.84d8e56e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.10b2050b.js",
     "static/js/2.84d8e56e.chunk.js",
-    "static/css/main.1b2ff3ff.chunk.css",
-    "static/js/main.6de1733f.chunk.js"
+    "static/css/main.4c7bac6d.chunk.css",
+    "static/js/main.b4ac845e.chunk.js"
   ]
 }
