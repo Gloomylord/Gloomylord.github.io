@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="shri-async-hw.js"></script>
+<script src="customMethod.js"></script>
+
+<script>
+    const {
+        AsyncArray,
+        add,
+        subtract,
+        multiply,
+        divide,
+        mod,
+        less,
+        equal,
+        lessOrEqual,
+        sqrt
+    } = Homework;
+    const wrapPromise = function (fn, ...rest) {
+        return new Promise(resolve => fn(...rest, resolve));
+    };
+
+    async function avg(array, cb) {
+        const length = await wrapPromise(array.length);
+        let sum = 0;
+        let i = 0;
+
+        while (await wrapPromise(less, i, length)) {
+            const value = await wrapPromise(array.get, i);
+            sum = await wrapPromise(add, value, sum);
+            i = await wrapPromise(add, i, 1);
+        }
+
+        const avg = await wrapPromise(divide, sum, length);
+        cb(avg);
+    }
+
+    const a = new AsyncArray([1, 2, 3, 10]);
+
+    avg(a, console.log); // результат 4
+    avg(new AsyncArray([20, 30, 40, 50]), console.log); // результат 35
+</script>
+</body>
+</html>
