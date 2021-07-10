@@ -6,6 +6,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<script src="send.js"></script>
+<script>
+    const observer = new PerformanceObserver(list => {
+        list.getEntries()
+            .map(({ name, entryType, startTime, duration }) => {
+                const obj = {
+                    "Duration": duration,
+                    "Entry Type": entryType,
+                    "Name": name,
+                    "Start Time": startTime,
+                };
+                return JSON.stringify(obj, null, 2);
+            }).forEach(console.log);
+        observer.disconnect();
+    });
+    observer.observe({
+        entryTypes: ["paint"]
+    });
+    if (true) {
+        const observer = new PerformanceObserver(list => {
+            list.getEntries()
+                .map(({name, entryType, startTime, duration}) => {
+                    const obj = {
+                        "Duration": duration,
+                        "Entry Type": entryType,
+                        "Name": name,
+                        "Start Time": startTime,
+                    };
+                    return JSON.stringify(obj, null, 2);
+                }).forEach(console.log);
+            observer.disconnect();
+        });
+        observer.observe({
+            entryTypes: ["first-input"]
+        });
+    }
+
+    // let counter = new Counter();
+    //
+    // counter.init('6A1D62E1-5DB9-4480-A661-AC766AD7D3FD', String(Math.random()).substr(2, 12), 'send test');
+    // counter.setAdditionalParams({
+    // 	env: 'production',
+    // 	platform: 'touch'
+    // });
+    //
+    // counter.send('connect', performance.timing.connectEnd - performance.timing.connectStart);
+    // counter.send('ttfb', performance.timing.responseEnd - performance.timing.requestStart);
+    //
+    // let timeStart = Date.now();
+    //
+    // setTimeout(function() {
+    // 	document.querySelector('.square').classList.add('black');
+    //
+    // 	counter.send('load', Date.now() - timeStart);
+    // }, Math.random() * 1000 + 500);
+</script>
 <canvas id="canvas1"></canvas>
 <script src="script.js"></script>
 </body>
